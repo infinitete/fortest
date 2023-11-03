@@ -12,9 +12,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: set-up
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18-nightly'
       - run: |
           npm config -g set registry https://registry.npmmirror.com
           npm install
