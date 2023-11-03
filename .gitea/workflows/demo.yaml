@@ -15,8 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18-nightly'
-      - run: |
-          npm config -g set registry https://registry.npmmirror.com
-          npm install
-          npm build
+      - run: npm config -g set registry https://registry.npmmirror.com
+      - run: npm install
+      - run: npm run build
 
